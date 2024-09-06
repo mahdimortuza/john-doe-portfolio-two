@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Container className=" ">
       <ContainerInner>
-        <div className=" bg-red-200 ">Hello</div>
+        <div className=" bg-red-200 font-dmSans ">Hello</div>
       </ContainerInner>
     </Container>
   );
