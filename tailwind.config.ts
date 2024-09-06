@@ -24,6 +24,29 @@ const config: Config = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+
+        // john doe portfolio custom colors starts here
+        themeBlue: {
+          DEFAULT: "hsl(var(--theme-blue))",
+        },
+        themeGray: {
+          DEFAULT: "hsl(var(--theme-gray))",
+        },
+        themeBgColor: {
+          DEFAULT: "hsl(var(--theme-bg-color))",
+        },
+        themeBlack: {
+          DEFAULT: "hsl(var(--theme-black))",
+        },
+        themeLightBlue: {
+          DEFAULT: "hsl(var(--theme-light-blue))",
+        },
+        themeMenu: {
+          DEFAULT: "hsl(var(--theme-menu-color))",
+        },
+
+        // john doe portfolio custom colors ends here
+
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
