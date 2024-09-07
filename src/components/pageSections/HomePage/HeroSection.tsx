@@ -20,7 +20,7 @@ const HeroSection = () => {
                     isHovered
                       ? "text-theme-blue -translate-y-3 opacity-0"
                       : "translate-y-0 opacity-100"
-                  } absolute duration-300 h-[30px] w-[50px] flex justify-center items-center`}
+                  } absolute duration-300 h-[20px] w-[50px] flex justify-center items-center`}
                 >
                   Hello
                 </span>
@@ -31,7 +31,7 @@ const HeroSection = () => {
                     isHovered
                       ? " text-themeBlue  translate-y-0 opacity-100"
                       : "translate-y-3 opacity-0"
-                  } absolute  duration-300 h-[30px] w-[50px] flex justify-center items-center`}
+                  } absolute  duration-300 h-[20px] w-[50px] flex justify-center items-center`}
                 >
                   Hello
                 </span>
