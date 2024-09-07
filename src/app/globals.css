@@ -100,5 +100,6 @@ body {
 }
 
 .active {
-  color: var(--theme-blue);
+  color: #4a6cff;
+  font: bold;
 }

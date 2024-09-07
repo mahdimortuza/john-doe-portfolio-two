@@ -56,24 +56,32 @@ const Navbar = () => {
             alt="logo"
           />
         </a>
-        <ul className="hidden md:flex gap-x-[30px] cursor-pointer ">
+        <ul className="hidden md:flex gap-x-[30px] cursor-pointer">
           {menuItems.map((item, index) => (
             <Link
               key={item}
               to={item}
               smooth={true}
-              activeClass="active"
               spy={true}
+              isDynamic={true}
+              offset={-50}
+              onSetActive={() => setHoveredIndex(index)}
+              onSetInactive={() => setHoveredIndex(null)}
             >
               <li
-                className={`flex flex-col px-[10px] py-[5px] justify-center mx-auto text-[16px] font-[500] text-themeGray  cursor-pointer ${openSans.className}`}
+                className={`flex flex-col px-[10px] py-[5px] justify-center mx-auto text-[16px] font-[500] text-themeGray cursor-pointer ${
+                  openSans.className
+                } ${
+                  hoveredIndex === index ? "text-themeBlue font-semibold" : ""
+                }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
+                // style={{ width: "100px" }} // Add a fixed width here
               >
                 <span
                   className={`${
                     hoveredIndex === index
-                      ? " text-themeBlue -translate-y-3 opacity-0"
+                      ? "-translate-y-3 opacity-0"
                       : "translate-y-0 opacity-100"
                   }  duration-300 capitalize absolute`}
                 >
@@ -82,9 +90,9 @@ const Navbar = () => {
                 <span
                   className={`${
                     hoveredIndex === index
-                      ? " text-themeBlue translate-y-0 opacity-100"
+                      ? "text-themeBlue translate-y-0 opacity-100"
                       : "translate-y-3 opacity-0"
-                  }  duration-300 capitalize `}
+                  }  duration-300 capitalize`}
                 >
                   {item}
                 </span>
@@ -93,7 +101,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <Link to="contact" smooth={true}>
+        <Link to="contact" activeClass="active" smooth={true}>
           <button
             className={`${openSans.className} hidden md:block text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
           >
