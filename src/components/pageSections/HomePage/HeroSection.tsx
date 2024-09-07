@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <Container className=" ">
       <ContainerInner>
-        <div className="flex justify-center items-center h-[100vh] ">
+        <div id="home" className="flex justify-center items-center h-[100vh] ">
           <ul className="cursor-pointer">
             <Link to="/">
               <li className=" relative flex items-center justify-center mx-auto">

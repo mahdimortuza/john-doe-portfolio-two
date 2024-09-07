@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  const menuItems = ["home", "about", "services", "portfolio", "blog"];
+  const menuItems = ["home", "about", "services", "portfolio", "blogs"];
 
   const handleNav = () => {
     setNav(!nav);
@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed top-0 left-0 w-full py-[20px] z-50 ${
+      className={`fixed bg-white top-0 left-0 w-full py-[20px] z-50 ${
         shadow ? "shadow" : "shadow-none"
       }`}
     >
