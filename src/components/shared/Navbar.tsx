@@ -1,10 +1,11 @@
 "use client";
 import assets from "@/assets";
+import { Separator } from "@/components/ui/separator";
 import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Separator } from "../ui/separator";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { openSans } from "../ui/fonts";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,6 +13,10 @@ const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
   };
 
   // animateScroll.scrollToTop(options);
@@ -35,11 +40,11 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed top-0 left-0 w-full py-[24px] bg-white z-50 backdrop-blur-3xl transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 w-full py-[20px] bg-white z-50 ${
         shadow ? "shadow" : "shadow-none"
       }`}
     >
-      <div className="max-w-[1290px] px-[10px] mx-auto flex justify-between items-center">
+      <div className="max-w-[1525px] mx-auto px-[15px] md:px-[0px] flex justify-between items-center">
         <a href="/">
           <Image
             className="cursor-pointer"
@@ -47,41 +52,53 @@ const Navbar = () => {
             alt="logo"
           />
         </a>
-        <ul className="hidden md:flex gap-[40px]">
-          <Link href="home">
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+        <ul className={`hidden md:flex gap-[40px] `}>
+          <Link to="home" smooth={true} activeClass="active" spy={true}>
+            <li
+              className={`text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black cursor-pointer ${openSans.className}`}
+            >
               Home
             </li>
           </Link>
 
-          <Link href="about">
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+          <Link to="about" smooth={true} activeClass="active" spy={true}>
+            <li
+              className={`text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black cursor-pointer ${openSans.className}`}
+            >
               About
             </li>
           </Link>
 
-          <Link href="services">
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+          <Link to="services" smooth={true} activeClass="active" spy={true}>
+            <li
+              className={`text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black cursor-pointer ${openSans.className}`}
+            >
               Services
             </li>
           </Link>
 
-          <Link href="projects">
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+          <Link to="projects" smooth={true} activeClass="active" spy={true}>
+            <li
+              className={`text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black cursor-pointer ${openSans.className}`}
+            >
               Projects
             </li>
           </Link>
 
-          <Link href="blogs">
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+          <Link to="blogs" smooth={true} activeClass="active" spy={true}>
+            <li
+              className={`text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black cursor-pointer ${openSans.className}`}
+            >
               Blogs
             </li>
           </Link>
         </ul>
 
-        <Link href="contact">
-          <button className="hidden md:block text-white bg-themeBlue hover:bg-black text-[16px] font-[500] leading-[150%] rounded-full px-[24px] py-[12px]">
-            Contact me
+        <Link to="contact" smooth={true}>
+          <button
+            className={`${openSans.className} hidden md:block text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
+          >
+            <span className="relative z-10">Contact Me</span>
           </button>
         </Link>
 
@@ -101,6 +118,7 @@ const Navbar = () => {
       >
         <Image
           className="cursor-pointer my-[24px] "
+          onClick={scrollToTop}
           src={assets.logos.mainLogo}
           alt="logo"
         />
@@ -108,44 +126,52 @@ const Navbar = () => {
         <Separator />
 
         <ul className="mt-5">
-          <Link href="home">
+          <Link to="home" smooth={true} activeClass="active" spy={true}>
             <li
               onClick={handleNav}
-              className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer"
+              className={`${openSans.className} text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer`}
             >
               Home
             </li>
           </Link>
 
-          <Link href="about">
+          <Link to="about" smooth={true} activeClass="active" spy={true}>
             <li
               onClick={handleNav}
-              className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer"
+              className={`${openSans.className} text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer`}
             >
               About
             </li>
           </Link>
 
-          <Link href="services">
+          <Link to="services" smooth={true} activeClass="active" spy={true}>
             <li
               onClick={handleNav}
-              className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer"
+              className={`${openSans.className} text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer`}
             >
               Services
             </li>
           </Link>
 
-          <Link href="projects">
+          <Link to="projects" smooth={true} activeClass="active" spy={true}>
             <li
               onClick={handleNav}
-              className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer"
+              className={`${openSans.className} text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer`}
             >
               Projects
             </li>
           </Link>
 
-          <Link href="/">
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+          <Link
+            onClick={handleNav}
+            to="blogs"
+            smooth={true}
+            activeClass="active"
+            spy={true}
+          >
+            <li
+              className={`${openSans.className} text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer`}
+            >
               Blogs
             </li>
           </Link>

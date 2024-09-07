@@ -1,13 +1,10 @@
-import Container from "@/components/Container";
-import ContainerInner from "@/components/ContainerInner";
+import HeroSection from "@/components/pageSections/HomePage/HeroSection";
 
 const Home = () => {
   return (
-    <Container className=" ">
-      <ContainerInner>
-        <div className=" bg-red-200 font-dmSans ">Hello</div>
-      </ContainerInner>
-    </Container>
+    <>
+      <HeroSection />
+    </>
   );
 };
 
