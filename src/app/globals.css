@@ -98,8 +98,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
+/* 
 .active {
   color: #4a6cff;
   font: bold;
-}
+} */

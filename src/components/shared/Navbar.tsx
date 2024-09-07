@@ -101,7 +101,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <Link to="contact" activeClass="active" smooth={true}>
+        <Link to="contact" smooth={true}>
           <button
             className={`${openSans.className} hidden md:block text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
           >
@@ -133,17 +133,15 @@ const Navbar = () => {
         <Separator />
 
         <ul className="mt-5">
-          {menuItems.map((item) => (
-            <Link
-              key={item}
-              to={item}
-              smooth={true}
-              activeClass="mobile-active"
-              spy={true}
-            >
+          {menuItems.map((item, index) => (
+            <Link key={item} to={item} smooth={true} spy={true}>
               <li
                 onClick={handleNav}
-                className={`${openSans.className} text-[16px] font-[500] leading-[150%] text-themeGray py-[12px] px-[16px] hover:text-black pb-[8px] cursor-pointer capitalize`}
+                className={`${
+                  openSans.className
+                } text-[16px] font-[500] leading-[150%] mx-[24px]font-semibold rounded-[6px] py-[12px] px-[16px] mb-[8px] cursor-pointer capitalize ${
+                  hoveredIndex === index ? "bg-[#EFF2FF]" : ""
+                }`}
               >
                 {item}
               </li>
