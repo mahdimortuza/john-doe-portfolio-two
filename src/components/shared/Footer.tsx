@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <Container>
       <ContainerInner>
-        <div className="grid grid-cols-5">
+        <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-3 xl:grid-cols-5 pt-[50px] lg:pt-[120px]">
           <div>
             <Image src={assets.logos.mainLogo} alt="logo" />
             <p
-              className={`${inter.className} mt-[30px] capitalize text-[16px] font-[400] w-[40ch] text-themeGray`}
+              className={`${inter.className} mt-[25px] lg:mt-[30px] capitalize text-[16px] font-[400] w-[33ch] md:w-[40ch] text-themeGray`}
             >
               I&apos;m a creative professional transforming visions into
               exceptional outcomes with detail and results.
@@ -172,7 +172,7 @@ const Footer = () => {
                 sign up for newsletter
               </h2>
               {/* email subscription input */}
-              <div className="relative w-[320px] mt-[10px]">
+              <div className="relative w-[300px] mt-[10px]">
                 <input
                   placeholder="hello@yourmail.com"
                   className={`${inter.className} text-[16px] font-normal px-[24px] py-[16px] bg-themeBgColor rounded-[8px] w-full`}

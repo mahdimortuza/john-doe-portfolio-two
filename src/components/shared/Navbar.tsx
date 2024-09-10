@@ -76,7 +76,6 @@ const Navbar = () => {
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                // style={{ width: "100px" }} // Add a fixed width here
               >
                 <span
                   className={`${
