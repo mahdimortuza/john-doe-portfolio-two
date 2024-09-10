@@ -12,32 +12,36 @@ const HeroSection = () => {
   const [hovered, setHovered] = useState<boolean>(false);
 
   return (
-    <Container className="mt-[80px]">
-      <ContainerInner className="py-[100px]">
-        <div id="home" className="flex items-center justify-center">
+    <Container className="pt-[80px]">
+      {/*  */}
+      <ContainerInner className="py-[50px] ">
+        <div
+          id="home"
+          className="flex flex-col lg:flex-row gap-3 items-center "
+        >
           {/* first div left side */}
-          <div className="w-full">
+          <div className="lg:w-1/2">
             <div className="flex flex-col gap-[32px]">
               <div className="flex flex-col gap-[10px]">
                 <h1
-                  className={`${openSans.className} font-openSans text-themeBlack capitalize font-[600] md:text-[60px] leading-[106%]`}
+                  className={`${openSans.className} font-openSans text-themeBlack capitalize font-[600] text-[32px] md:text-[48px] xl:text-[60px] leading-[106%]`}
                 >
                   Creative Professional
                 </h1>
                 <div className="flex gap-[8px] items-center">
                   <Image
-                    className=" h-[34px] w-[68px] md:h-[68px] md:w-[140px] rounded-full"
+                    className=" h-[36px] w-[72px] lg:h-[60px] lg:w-[120px] md:h-[68px] md:w-[140px] rounded-full"
                     src={assets.heroImages.descriptionObj}
                     alt="description-image"
                   />
                   <h1
-                    className={`${openSans.className} font-openSans text-themeBlack capitalize font-[600] md:text-[60px] leading-[106%]`}
+                    className={`${openSans.className} font-openSans text-themeBlack capitalize font-[600] text-[36px] md:text-[48px] xl:text-[60px] leading-[106%]`}
                   >
                     to make your
                   </h1>
                 </div>
                 <h1
-                  className={`${openSans.className} font-openSans text-themeBlack capitalize font-[600] md:text-[60px] leading-[106%]`}
+                  className={`${openSans.className} font-openSans text-themeBlack capitalize font-[600] text-[36px] md:text-[48px] xl:text-[60px] leading-[106%]`}
                 >
                   next project shine
                 </h1>
@@ -88,14 +92,16 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+          {/* --------------------------------------------------- */}
 
           {/* 2nd div right side contents */}
-          <div className="relative w-full bg-red-500">
+
+          <div className="bg-red-200 w-full xl:w-1/2 relative h-[117vh] lg:h-[107vh]">
             {/* left side content with customer images  */}
-            <div className="flex justify-between">
-              <div className=" flex flex-col items-center justify-center gap-[14px] h-[136px] w-[296px] rounded-[24px] bg-[#EAFFEB]">
+            <div className="flex absolute bottom-0 lg:bottom-auto lg:top-0 left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-0">
+              <div className="absolute lg:static bottom-[170px] -left-[170px] z-10 mr-[10px] xl:mr-[140px] flex flex-col items-center justify-center gap-[14px] h-[127px] w-[207px] lg:h-[136px] lg:w-[296px] rounded-[24px] bg-[#EAFFEB]">
                 <p
-                  className={`${inter.variable} text-[14px] font-medium text-center font-inter capitalize text-[#2E2F33]`}
+                  className={`${inter.variable} text-[12px] xl:text-[14px] font-medium text-center font-inter capitalize text-[#2E2F33]`}
                 >
                   treated by 300+ worldwide <br /> brand & customers
                 </p>
@@ -127,9 +133,10 @@ const HeroSection = () => {
               </div>
 
               {/* stars ratting here  */}
-              <div className="w-[212px] h-[136px] bg-[#FEEFFF] rounded-[24px] flex flex-col items-center justify-center">
+              {/* absolute lg:static bottom-[170px] -left-[70px] */}
+              <div className="absolute lg:static -left-[35px] bottom-0 w-[208px] h-[127px] lg:w-[212px] lg:h-[136px] bg-[#FEEFFF] rounded-[24px] flex flex-col items-center justify-center">
                 <p
-                  className={`text-[#09090A] ${openSans.className} font-openSans text-[32px] font-semibold`}
+                  className={`text-[#09090A] ${openSans.className} font-openSans text-[28px] xl:text-[32px] font-semibold`}
                 >
                   96%{" "}
                 </p>
@@ -143,13 +150,12 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* side contents here  */}
-
-            <div>
-              {/* first item  */}
-              <div className="w-[136px] h-[217px] flex flex-col items-center justify-center bg-[#EFF2FF] rounded-[24px]">
+            {/* Side contents here */}
+            <div className="absolute flex flex-row-reverse lg:block z-10 top-[136px] lg:top-[145px] xl:top-[160px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-[350px] xl:right-[460px]">
+              {/* First item */}
+              <div className="absolute lg:static left-[42px] top-[262px] w-[130px] h-[166px] lg:w-[136px] lg:h-[217px] flex flex-col items-center justify-center bg-[#EFF2FF] rounded-[24px]">
                 <p
-                  className={`text-[#09090A] text-center ${openSans.className} font-openSans text-[32px] font-semibold capitalize`}
+                  className={`text-[#09090A] text-center ${openSans.className} font-openSans text-[28px] xl:text-[32px] font-semibold capitalize`}
                 >
                   355+
                 </p>
@@ -160,34 +166,37 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              {/* second item  */}
-              <div className="w-[136px] h-[223px] flex flex-col items-center justify-center bg-[#FFF8DF] rounded-[24px]">
+              {/* Second item */}
+              <div className="absolute -bottom-[560px] -left-[170px] z-50 lg:static w-[130px] h-[166px] lg:w-[136px] lg:h-[223px] flex flex-col items-center justify-center bg-[#FFF8DF] rounded-[24px] mt-[10px] xl:mt-[24px]">
                 <p
                   className={`text-[#09090A] text-center ${openSans.className} font-openSans text-[32px] font-semibold capitalize`}
                 >
-                  355+
+                  200+
                 </p>
                 <p
                   className={`text-[#2E2F33] ${inter.className} font-inter text-center text-[16px] font-[400] capitalize`}
                 >
-                  Completed Projects
+                  Product Launched
                 </p>
               </div>
             </div>
 
-            {/* main profile image section here  */}
-            <div className=" w-[433px] h-[466px] absolute right-0 top-36">
-              <Image
-                src={assets.heroImages.profilePic}
-                alt="portfolio image"
-                className="h-[466px] w-[408px] absolute z-30"
-              />
-              <Image
-                src={assets.heroImages.backgroundObj}
-                alt="image cover"
-                fill={true}
-                className="object-cover"
-              />
+            {/* absolute */}
+            {/* Main profile image section here */}
+            <div className="absolute top-0  lg:top-[145px] xl:top-[160px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-0">
+              <div className="w-[342px] h-[368px] xl:w-[433px] xl:h-[466px] relative">
+                <Image
+                  src={assets.heroImages.profilePic}
+                  alt="portfolio image"
+                  className="h-[322px] w-[368px] xl:h-[466px] xl:w-[408px] absolute left-0 bottom-0 lg:right-0 z-30"
+                />
+                <Image
+                  src={assets.heroImages.backgroundObj}
+                  alt="image cover"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

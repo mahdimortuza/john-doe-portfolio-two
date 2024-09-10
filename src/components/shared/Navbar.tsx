@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed bg-white top-0 left-0 w-full py-[20px] z-50 ${
+      className={`fixed bg-white top-0 left-0 w-full py-[20px] px-[8px] z-50 ${
         shadow ? "shadow" : "shadow-none"
       }`}
     >
