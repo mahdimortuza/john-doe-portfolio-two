@@ -22,14 +22,14 @@ const AboutSection = () => {
                 src={assets.aboutImage.background}
                 // fill={true}
                 alt="image cover"
-                className="object-cover rounded-[16px] lg:rounded-[32px] h-[836px] w-full"
+                className="object-cover rounded-[16px] lg:rounded-[32px] h-[700px] w-full"
               />
             </div>
           </div>
 
           {/* right side second div  */}
-          <div className="bg-[#fff] h-[836px] w-1/2 rounded-[16px] lg:rounded-[32px]">
-            <div className="mx-[96px] my-[100px]">
+          <div className="bg-[#fff] h-[700px] w-1/2 rounded-[16px] lg:rounded-[32px]">
+            <div className="mx-[96px] my-[50px] bg-red-200">
               <h1
                 className={`${openSans.className} font-openSans text-[44px] text-black font-[600] leading-[136%] capitalize`}
               >
@@ -45,7 +45,7 @@ const AboutSection = () => {
               </p>
 
               <ul
-                className={`${inter.className} font-inter mt-[32px]   custom-list list-disc pl-0 text-themeGray text-[16px] font-normal leading-[162%] capitalize`}
+                className={`${inter.className} font-inter mt-[32px] custom-list list-disc pl-0 text-themeGray text-[16px] font-normal leading-[162%] capitalize`}
                 style={{ listStylePosition: "inside" }}
               >
                 <li className="mt-[0px]" style={{ paddingLeft: "0px" }}>
