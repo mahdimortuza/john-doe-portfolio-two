@@ -8,35 +8,38 @@ import { FaBehanceSquare, FaDribbble, FaPinterest } from "react-icons/fa";
 const AboutSection = () => {
   return (
     <Container className=" ">
-      <ContainerInner className="rounded-none bg-red-200">
-        <div id="about" className="flex gap-[8px] lg:gap-[20px]">
+      <ContainerInner className="rounded-none">
+        <div
+          id="about"
+          className="flex flex-col md:flex-row justify-center items-center gap-[8px] xl:gap-[20px]"
+        >
           {/* left side first div  */}
-          <div className="w-1/2">
+          <div className="w-full xl:w-1/2">
             <div className="relative ">
               <Image
                 src={assets.aboutImage.profileImage}
                 alt="profile image"
-                className="absolute"
+                className="absolute bottom-0  h-[90%] md:h-[80%] lg:h-[90%] w-auto left-1/2 transform -translate-x-1/2"
               />
               <Image
                 src={assets.aboutImage.background}
                 // fill={true}
                 alt="image cover"
-                className="object-cover rounded-[16px] lg:rounded-[32px] h-[700px] w-full"
+                className="object-cover rounded-[16px] xl:rounded-[32px] h-[362px] md:h-[600px] lg:h-[600px] xl:h-[836px] w-full"
               />
             </div>
           </div>
 
           {/* right side second div  */}
-          <div className="bg-[#fff] h-[700px] w-1/2 rounded-[16px] lg:rounded-[32px]">
-            <div className="mx-[96px] my-[50px] bg-red-200">
+          <div className="bg-[#fff] h-full md:h-[600px] lg:h-[600px] xl:h-[836px] w-full xl:w-1/2 rounded-[16px] xl:rounded-[32px]">
+            <div className="mx-[14px] my-[10px] lg:my-[48px] xl:mx-[96px] xl:my-[100px]">
               <h1
-                className={`${openSans.className} font-openSans text-[44px] text-black font-[600] leading-[136%] capitalize`}
+                className={`${openSans.className} font-openSans text-[26px] xl:text-[44px] text-black font-[600] leading-[128%] xl:leading-[136%] capitalize`}
               >
                 Passionate About Crafting Digital Excellence
               </h1>
               <p
-                className={`${inter.className} font-inter mt-[24px] text-themeGray text-[16px] font-normal leading-[175%]`}
+                className={`${inter.className} font-inter mt-[16px] xl:mt-[24px] text-themeGray text-[16px] font-normal leading-[162%] xl:leading-[175%]`}
               >
                 I&apos;m a creative professional dedicated to bringing unique
                 visions to life through innovative design and development. With
@@ -45,7 +48,7 @@ const AboutSection = () => {
               </p>
 
               <ul
-                className={`${inter.className} font-inter mt-[32px] custom-list list-disc pl-0 text-themeGray text-[16px] font-normal leading-[162%] capitalize`}
+                className={`${inter.className} font-inter mt-[24px] xl:mt-[32px] custom-list list-disc pl-0 text-themeGray text-[16px] font-normal leading-[162%] capitalize`}
                 style={{ listStylePosition: "inside" }}
               >
                 <li className="mt-[0px]" style={{ paddingLeft: "0px" }}>
@@ -54,7 +57,10 @@ const AboutSection = () => {
                     impact.
                   </span>
                 </li>
-                <li className="mt-[8px]" style={{ paddingLeft: "0px" }}>
+                <li
+                  className="mt-[12px] xl:mt-[8px]"
+                  style={{ paddingLeft: "0px" }}
+                >
                   <span style={{ position: "relative", top: "-4px" }}>
                     Delivering high-quality, user-centered solutions.
                   </span>
@@ -63,30 +69,30 @@ const AboutSection = () => {
 
               {/* resume button  */}
               <button
-                className={`${openSans.className} font-openSans mt-[55px] text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[26px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
+                className={`${openSans.className} font-openSans mt-[32px] xl:mt-[55px] text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[26px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
               >
                 <span className="relative z-10">Download CV</span>
               </button>
 
               {/* statistic and social profile  */}
-              <div className="flex gap-[20px] mt-[50px]">
-                <div className="capitalize flex items-center justify-center rounded-[24px] gap-[20px] w-[280px] h-[136px] bg-[#EFF2FF] px-[36px] py-[34px]">
+              <div className="flex gap-[8px] xl:gap-[20px] mt-[40px] xl:mt-[50px]">
+                <div className="capitalize flex items-center justify-center rounded-[24px] gap-[12px] xl:gap-[20px] w-[175px] h-[90px] xl:w-[280px] xl:h-[136px] bg-[#EFF2FF] px-[20px] py-[14px] xl:px-[36px] xl:py-[34px]">
                   <h1
-                    className={`${openSans.className} font-openSans text-black text-center text-[54px] font-[600] leading-[118%]`}
+                    className={`${openSans.className} font-openSans text-black text-center text-[24px] xl:text-[54px] font-[600] leading-[118%]`}
                   >
                     12+
                   </h1>
                   <p
-                    className={`${inter.className} font-inter text-[#2E2F33] text-[16px] font-medium capitalize leading-[150%]`}
+                    className={`${inter.className} font-inter text-[#2E2F33] text-[14px] xl:text-[16px] font-medium capitalize leading-[150%]`}
                   >
                     year of experience
                   </p>
                 </div>
 
                 {/* second element   */}
-                <div className="capitalize flex flex-col items-center justify-center rounded-[24px] gap-[10px] w-[280px] h-[136px] bg-[#FFF8DF]">
+                <div className="capitalize flex flex-col items-center justify-center rounded-[24px] gap-[8px] xl:gap-[10px] w-[160px] h-[90px] xl:w-[280px] xl:h-[136px] bg-[#FFF8DF]">
                   <h1
-                    className={`${inter.className} font-inter text-[#2E2F33] text-left text-[16px] font-[400] leading-[150%] capitalize`}
+                    className={`${inter.className} font-inter text-[#2E2F33] text-left text-[14px] xl:text-[16px] font-[400] leading-[150%] capitalize`}
                   >
                     Also Find Me On
                   </h1>
@@ -94,15 +100,15 @@ const AboutSection = () => {
                   {/* social icons */}
                   <div className="flex  gap-[12px] items-center justify-center">
                     <a href="/">
-                      <FaBehanceSquare className="text-[#005CFF] h-[26px] w-[26px]" />
+                      <FaBehanceSquare className="text-[#005CFF] h-[22px] w-[22px] xl:h-[26px] xl:w-[26px]" />
                     </a>
 
                     <a href="/">
-                      <FaDribbble className="text-[#B2215A] bg-[#E74D89] rounded-full h-[26px] w-[26px]" />
+                      <FaDribbble className="text-[#B2215A] bg-[#E74D89] rounded-full h-[22px] w-[22px] xl:h-[26px] xl:w-[26px]" />
                     </a>
 
                     <a href="/">
-                      <FaPinterest className="text-[#CB1F27] bg-[#fff] rounded-full h-[26px] w-[26px]" />
+                      <FaPinterest className="text-[#CB1F27] bg-[#fff] rounded-full h-[22px] w-[22px] xl:h-[26px] xl:w-[26px]" />
                     </a>
 
                     <a href="/">
