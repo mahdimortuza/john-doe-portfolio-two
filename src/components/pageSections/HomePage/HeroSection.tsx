@@ -14,13 +14,13 @@ const HeroSection = () => {
   return (
     <Container className="pt-[40px] lg:pt-[50px]">
       {/*  */}
-      <ContainerInner className=" py-[50px]  lg:py-[100px] ">
+      <ContainerInner className="py-[50px] lg:py-[60px] bg-[#fff] ">
         <div
           id="home"
-          className="flex max-w-[1530px] px-[10px] mx-auto flex-col lg:flex-row gap-3 items-center "
+          className="flex max-w-[1530px] px-[10px] mx-auto flex-col lg:flex-row gap-5 lg:gap-3 items-center "
         >
           {/* first div left side */}
-          <div className="mx-auto lg:w-1/2 bg-red-200">
+          <div className="mx-auto lg:w-1/2 ">
             <div className="flex flex-col gap-[32px]">
               <div className="flex flex-col gap-[10px]">
                 <h1
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 </h1>
               </div>
               <p
-                className={`${inter.className} text-[#40424D] font-inter text-[14px] md:text-[18px] font-normal leading-[150%] text-left w-[40ch] sm:w-[45ch]`}
+                className={`${inter.className} text-[#40424D] font-inter text-[14px] md:text-[18px] font-normal leading-[150%] text-left w-[38ch] sm:w-[45ch]`}
               >
                 Discover my passion for transforming ideas into impactful
                 digital experiences. With expertise in design and development, I
@@ -102,10 +102,11 @@ const HeroSection = () => {
 
           {/* 2nd div right side contents */}
 
-          <div className=" w-full xl:w-1/2 relative h-[93vh] lg:h-[80vh]">
+          <div className=" w-full xl:w-1/2 relative h-[90vh] lg:h-[70vh] xl:h-[80vh]">
             {/* left side content with customer images  */}
             <div className="flex absolute bottom-0 lg:bottom-auto lg:top-0 left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-0">
-              <div className="absolute lg:static bottom-[170px] -left-[170px] z-10 mr-[10px] xl:mr-[140px] flex flex-col items-center justify-center gap-[14px] h-[127px] w-[207px] lg:h-[136px] lg:w-[296px] rounded-[24px] bg-[#EAFFEB]">
+              {/* absolute lg:static bottom-[170px] -left-[170px]  */}
+              <div className="absolute bottom-[160px] -right-[48px] z-20 lg:static  mr-[10px] xl:mr-[140px] flex flex-col items-center justify-center gap-[14px] h-[120px] w-[200px] lg:h-[136px] lg:w-[296px] rounded-[24px] bg-[#EAFFEB]">
                 <p
                   className={`${inter.variable} text-[12px] xl:text-[14px] font-medium text-center font-inter capitalize text-[#2E2F33]`}
                 >
@@ -140,7 +141,8 @@ const HeroSection = () => {
 
               {/* stars ratting here  */}
               {/* absolute lg:static bottom-[170px] -left-[70px] */}
-              <div className="absolute lg:static -left-[35px] bottom-0 w-[208px] h-[127px] lg:w-[212px] lg:h-[136px] bg-[#FEEFFF] rounded-[24px] flex flex-col items-center justify-center">
+              {/* absolute lg:static -left-[40px] bottom-[5px] */}
+              <div className="absolute lg:static -left-[38px] bottom-0 z-10 w-[200px] h-[120px] lg:w-[212px] lg:h-[136px] bg-[#FEEFFF] rounded-[24px] flex flex-col items-center justify-center">
                 <p
                   className={`text-[#09090A] ${openSans.className} font-openSans text-[28px] xl:text-[32px] font-semibold`}
                 >
@@ -157,9 +159,10 @@ const HeroSection = () => {
             </div>
 
             {/* Side contents here */}
-            <div className="absolute flex flex-row-reverse lg:block z-10 top-[136px] lg:top-[145px] xl:top-[160px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-[350px] xl:right-[460px]">
+            {/* flex flex-row-reverse lg:block z-10 top-[136px] */}
+            <div className="absolute  top-[136px] z-40 bottom-0 lg:top-[145px] xl:top-[160px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-[350px] xl:right-[460px]">
               {/* First item */}
-              <div className="absolute lg:static left-[42px] top-[260px] w-[130px] h-[166px] lg:w-[136px] lg:h-[217px] flex flex-col items-center justify-center bg-[#EFF2FF] rounded-[24px]">
+              <div className="absolute left-[42px] bottom-[124px] z-10 lg:static  w-[119px] h-[156px] lg:w-[136px] lg:h-[217px] flex flex-col items-center justify-center bg-[#EFF2FF] rounded-[24px]">
                 <p
                   className={`text-[#09090A] text-center ${openSans.className} font-openSans text-[28px] xl:text-[32px] font-semibold capitalize`}
                 >
@@ -173,7 +176,8 @@ const HeroSection = () => {
               </div>
 
               {/* Second item */}
-              <div className="absolute -bottom-[558px] -left-[170px] z-50 lg:static w-[130px] h-[166px] lg:w-[136px] lg:h-[223px] flex flex-col items-center justify-center bg-[#FFF8DF] rounded-[24px] mt-[10px] xl:mt-[24px]">
+              {/* absolute -bottom-[573px] -left-[170px] z-50 lg:static */}
+              <div className="absolute bottom-0 right-[42px] lg:bottom-auto lg:right-auto w-[119px] h-[156px] lg:w-[136px] lg:h-[223px] flex flex-col items-center justify-center bg-[#FFF8DF] rounded-[24px] mt-[10px] xl:mt-[24px]">
                 <p
                   className={`text-[#09090A] text-center ${openSans.className} font-openSans text-[32px] font-semibold capitalize`}
                 >
@@ -189,12 +193,12 @@ const HeroSection = () => {
 
             {/* absolute */}
             {/* Main profile image section here */}
-            <div className="absolute top-0  lg:top-[145px] xl:top-[160px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-0">
-              <div className="w-[342px] h-[368px] xl:w-[433px] xl:h-[466px]  relative">
+            <div className="absolute top-[20px] md:top-0 lg:top-[145px] xl:top-[160px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:right-0">
+              <div className="w-[322px] h-[348px] md:w-[342px] md:h-[368px] xl:w-[433px] xl:h-[466px]  relative">
                 <Image
                   src={assets.heroImages.profilePic}
                   alt="portfolio image"
-                  className="h-[350px] w-[376px] xl:h-[466px] xl:w-[408px] absolute left-0 bottom-0 lg:right-0 z-30"
+                  className="h-[340px] w-[356px] md:h-[350px] md:w-[376px] xl:h-[466px] xl:w-[408px] absolute left-0 bottom-0 lg:right-0 z-30"
                 />
                 <Image
                   src={assets.heroImages.backgroundObj}

@@ -4,7 +4,7 @@ import ContainerInner from "@/components/ContainerInner";
 const ServiceSection = () => {
   return (
     <Container className=" ">
-      <ContainerInner>
+      <ContainerInner className="bg-[#fff] ">
         <div
           id="services"
           className="flex justify-center items-center h-[100vh] "

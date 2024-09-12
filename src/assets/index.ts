@@ -17,5 +17,9 @@ const assets = {
   star: {
     star: require("../assets/star-rating/Star.svg"),
   },
+  aboutImage: {
+    background: require("../assets/about-images/background/background.jpeg"),
+    profileImage: require("../assets/about-images/profile-image.png"),
+  },
 };
 export default assets;

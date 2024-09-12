@@ -41,7 +41,7 @@ body {
 
     /* john doe portfolio custom colors starts here  */
     --theme-blue: 229, 100%, 65%;
-    --theme-gray: 231 9% 28%;
+    --theme-gray: 231 9% 28%; /* #40424d */
     --theme-bg-color: 227, 15%, 88%;
     --theme-black: 240, 5%, 4%;
     /* john doe portfolio custom colors ends here  */
@@ -98,8 +98,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
-/* 
-.active {
-  color: #4a6cff;
-  font: bold;
-} */
+
+/* Custom CSS to style the bullet marker */
+.custom-list > li {
+  list-style-image: url(../assets/li-dot/dot.png);
+}
