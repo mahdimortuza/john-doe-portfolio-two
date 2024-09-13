@@ -1,15 +1,25 @@
+import assets from "@/assets";
 import Container from "@/components/Container";
 import ContainerInner from "@/components/ContainerInner";
+import Image from "next/image";
 
 const ProjectSection = () => {
   return (
     <Container className=" ">
-      <ContainerInner>
+      <ContainerInner className="bg-[#fff]">
         <div
           id="portfolio"
-          className="flex justify-center items-center h-[100vh] "
+          className="max-w-[1530px] py-[48px] xl:py-[100px] px-[10px] mx-auto"
         >
-          ProjectSection
+          {/* left side container holder */}
+          <div>
+            <Image src={assets.projects.project1} alt="project image" />
+            <h1>apps design</h1>
+            <p>john doe creative designer </p>
+          </div>
+
+          {/* right side container holder */}
+          <div></div>
         </div>
       </ContainerInner>
     </Container>

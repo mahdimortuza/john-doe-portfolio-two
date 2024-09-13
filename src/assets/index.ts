@@ -21,5 +21,18 @@ const assets = {
     background: require("../assets/about-images/background/background.jpeg"),
     profileImage: require("../assets/about-images/profile-image.png"),
   },
+  icons: {
+    ui: require("../assets/icons/ui.svg"),
+    ux: require("../assets/icons/ux.svg"),
+    web: require("../assets/icons/web.svg"),
+    content: require("../assets/icons/content.svg"),
+  },
+  projects: {
+    project1: require("../assets/products-images/project1.jpeg"),
+    project2: require("../assets/products-images/project2.jpeg"),
+    project3: require("../assets/products-images/project3.jpeg"),
+    project4: require("../assets/products-images/project4.png"),
+    project5: require("../assets/products-images/project5.jpeg"),
+  },
 };
 export default assets;
