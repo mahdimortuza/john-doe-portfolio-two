@@ -34,5 +34,8 @@ const assets = {
     project4: require("../assets/products-images/project4.png"),
     project5: require("../assets/products-images/project5.jpeg"),
   },
+  bgGrid: {
+    grid: require("../assets/products-images/background/background.png"),
+  },
 };
 export default assets;
