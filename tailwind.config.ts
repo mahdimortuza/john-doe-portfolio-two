@@ -72,6 +72,7 @@ const config: Config = {
         openSans: ["var(--font-open-sans)"],
         inter: ["var(--font-inter)"],
         dmSans: ["var(--font-dm-sans)"],
+        outfit: ["var(--font-outfit)"],
       },
       borderRadius: {
         lg: "var(--radius)",
