@@ -37,5 +37,8 @@ const assets = {
   bgGrid: {
     grid: require("../assets/products-images/background/background.png"),
   },
+  ctaImage: {
+    image: require("../assets/cta-images/profile-image.png"),
+  },
 };
 export default assets;
