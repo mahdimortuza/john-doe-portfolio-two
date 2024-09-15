@@ -40,5 +40,9 @@ const assets = {
   ctaImage: {
     image: require("../assets/cta-images/profile-image.png"),
   },
+  blogImage: {
+    blog1: require("../assets/blogs-image/blog1.jpeg"),
+    blog2: require("../assets/blogs-image/blog2.jpeg"),
+  },
 };
 export default assets;
