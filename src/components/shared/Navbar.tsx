@@ -45,8 +45,10 @@ const Navbar = () => {
   return (
     <nav
       // max-w-[1530px] px-[10px] mx-auto
-      className={`fixed bg-white top-0 left-0 right-0 w-full py-[20px] px-[10px] z-50 ${
-        shadow ? "shadow" : "shadow-none"
+      className={`fixed bg-white top-0 right-[10px] left-[10px] lg:right-[8px] lg:left-[8px] py-[20px]  px-[10px] z-50 max-w-[1905px] mx-auto ${
+        shadow
+          ? "shadow-[0px_0px_3px_-0px_rgba(0,0,0,0.3)] rounded-t-[0px] mt-[0px]"
+          : "shadow-none rounded-t-[32px] mt-[20px]"
       }`}
     >
       <div className="max-w-[1525px] mx-auto px-[15px] md:px-[0px] flex justify-between items-center">

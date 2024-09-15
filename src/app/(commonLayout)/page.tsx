@@ -4,6 +4,7 @@ import CallToActionSection from "@/components/pageSections/HomePage/CallToAction
 import ContactSection from "@/components/pageSections/HomePage/ContactSection";
 import HeroSection from "@/components/pageSections/HomePage/HeroSection";
 import ProjectSection from "@/components/pageSections/HomePage/ProjectSection";
+import ReviewSection from "@/components/pageSections/HomePage/ReviewSection";
 import ServiceSection from "@/components/pageSections/HomePage/ServiceSection";
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
       <ServiceSection />
       <ProjectSection />
       <CallToActionSection />
-      {/* <ReviewSection /> */}
+      <ReviewSection />
       <ContactSection />
       <BlogsSection />
     </>

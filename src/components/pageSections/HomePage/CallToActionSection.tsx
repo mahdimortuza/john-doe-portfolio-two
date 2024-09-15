@@ -7,10 +7,9 @@ import Image from "next/image";
 const CallToActionSection = () => {
   return (
     <Container className=" ">
-      <ContainerInner className="bg-themeBlue">
+      <ContainerInner className=" relative bg-themeBlue">
+        <div className="absolute mx-auto inset-0 bg-gradient-to-t  from-white/30 via-transparent to-transparent"></div>
         <div className="relative overflow-hidden pt-[48px] xl:pt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] items-center justify-content-between max-w-[1530px] px-[10px] mx-auto">
-          <div className="absolute mx-auto inset-0 bg-gradient-to-t  from-white/30 via-transparent to-transparent"></div>
-
           <Image
             src={assets.bgGrid.grid}
             alt="grid background"

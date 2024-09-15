@@ -4,7 +4,7 @@ import ContainerInner from "@/components/ContainerInner";
 const ReviewSection = () => {
   return (
     <Container className=" ">
-      <ContainerInner>
+      <ContainerInner className="bg-white">
         <div className="flex justify-center items-center h-[100vh] ">
           ReviewSection
         </div>
