@@ -14,7 +14,10 @@ const BlogsSection = () => {
   return (
     <Container className=" ">
       <ContainerInner>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[20px]">
+        <div
+          id="blogs"
+          className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[20px]"
+        >
           {/* first item  */}
           <div className="relative col-span-1 lg:col-span-2 bg-themeBlue rounded-[32px]  py-[48px] md:py-[80px]">
             <div className="absolute mx-auto inset-0 bg-gradient-to-t  from-white/30 via-transparent to-transparent"></div>

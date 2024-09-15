@@ -26,7 +26,10 @@ const ContactSection = () => {
   return (
     <Container className=" ">
       <ContainerInner className="bg-[#fff]">
-        <div className="flex max-w-[1530px] px-[10px] py-[48px] lg:py-[120px] mx-auto flex-col lg:flex-row gap-[32px] items-center justify-between ">
+        <div
+          id="contact"
+          className="flex max-w-[1530px] px-[10px] py-[48px] lg:py-[120px] mx-auto flex-col lg:flex-row gap-[32px] items-center justify-between "
+        >
           {/* left side container  div  */}
 
           <div className=" md:w-[65ch]">

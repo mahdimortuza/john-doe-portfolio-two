@@ -103,3 +103,15 @@ body {
 .custom-list > li {
   list-style-image: url(../assets/li-dot/dot.png);
 }
+/* styles for carousel slider  */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  gap: 20px;
+}
+.embla__slide {
+  flex: 0 0 75%;
+  min-width: 0;
+}

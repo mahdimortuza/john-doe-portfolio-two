@@ -40,6 +40,14 @@ const assets = {
   ctaImage: {
     image: require("../assets/cta-images/profile-image.png"),
   },
+  reviewImage: {
+    dash: require("../assets/review-images/dashed-line.svg"),
+    client1: require("../assets/review-images/1.jpeg"),
+    client2: require("../assets/review-images/2.jpeg"),
+    client3: require("../assets/review-images/3.jpeg"),
+    client4: require("../assets/review-images/4.jpeg"),
+    logo1: require("../assets/review-images/client-logos/google.svg"),
+  },
   blogImage: {
     blog1: require("../assets/blogs-image/blog1.jpeg"),
     blog2: require("../assets/blogs-image/blog2.jpeg"),
