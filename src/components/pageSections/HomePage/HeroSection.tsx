@@ -12,7 +12,7 @@ const HeroSection = () => {
   const [hovered, setHovered] = useState<boolean>(false);
 
   return (
-    <Container className="pt-[40px] lg:pt-[50px]">
+    <Container className="pt-[40px] lg:pt-[30px]">
       {/*  */}
       <ContainerInner className="py-[50px] lg:py-[60px] bg-[#fff] ">
         <div

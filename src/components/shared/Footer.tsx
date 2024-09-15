@@ -13,12 +13,13 @@ import { Separator } from "../ui/separator";
 const Footer = () => {
   return (
     <Container>
-      <ContainerInner>
-        <div className="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-3 xl:grid-cols-5 pt-[50px] lg:pt-[120px]">
-          <div>
+      <ContainerInner className="bg-white">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[40px] xl:gap-[0px] max-w-[1530px] px-[10px] mx-auto pt-[50px] xl:pt-[120px]">
+          {/* first item here  */}
+          <div className=" col-span-2 md:col-span-1 xl:col-span-2 w-full xl:w-[50ch] order-1">
             <Image src={assets.logos.mainLogo} alt="logo" />
             <p
-              className={`${inter.className} mt-[25px] lg:mt-[30px] capitalize text-[16px] font-[400] w-[33ch] md:w-[40ch] text-themeGray`}
+              className={`${inter.className} mt-[25px] lg:mt-[30px] capitalize text-[16px] font-[400]  text-themeGray`}
             >
               I&apos;m a creative professional transforming visions into
               exceptional outcomes with detail and results.
@@ -48,11 +49,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* empty div  */}
-          <div></div>
-
-          {/* navigation  */}
-          <div className="">
+          {/* second item navigation  */}
+          <div className=" col-span-1 order-3 lg:order-2 mx-auto md:ml-0">
             <h1
               className={`${openSans.className} text-black text-[20px] font-[600] capitalize`}
             >
@@ -89,8 +87,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* others  */}
-          <div>
+          {/* third item others menu  */}
+          <div className=" col-span-1 order-2 lg:order-3">
             <h1
               className={`${openSans.className} text-black text-[20px] font-[600] capitalize`}
             >
@@ -120,8 +118,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* contact  */}
-          <div>
+          {/* last item contact  */}
+          <div className=" col-span-2 md:col-span-1 order-4">
             <h1
               className={`${openSans.className} text-black text-[20px] font-[600] capitalize`}
             >
@@ -172,9 +170,9 @@ const Footer = () => {
                 sign up for newsletter
               </h2>
               {/* email subscription input */}
-              <div className="relative w-[300px] mt-[10px]">
+              <div className="relative w-full mt-[10px]">
                 <input
-                  placeholder="hello@yourmail.com"
+                  placeholder="Email..."
                   className={`${inter.className} text-[16px] font-normal px-[24px] py-[16px] bg-themeBgColor rounded-[8px] w-full`}
                 />
                 <svg
@@ -183,7 +181,7 @@ const Footer = () => {
                   height="28"
                   viewBox="0 0 28 28"
                   fill="none"
-                  className="absolute right-1 top-[32px] transform -translate-y-1/2 bg-themeBlue p-[6px] rounded-full text-white w-[30px] h-[30px] md:w-[38px] md:h-[38px]"
+                  className="absolute right-1 top-[50%] transform -translate-y-1/2 bg-themeBlue p-[6px]  text-white w-[55px] rounded-r-[8px] -mr-[5px] h-[55px] "
                 >
                   <g clip-path="url(#clip0_286_9969)">
                     <path
@@ -204,10 +202,10 @@ const Footer = () => {
         {/* footer foot  */}
         <div>
           {/* separator  */}
-          <Separator className="mt-[100px]" />
+          <Separator className="mt-[48px] xl:mt-[100px]" />
 
           <p
-            className={`${dmSans.className} mt-[24px] mb-[42px] text-themeGray text-center text-[14px] capitalize`}
+            className={`${dmSans.className} mt-[24px] text-themeGray text-center pb-[40px] text-[14px] capitalize`}
           >
             &copy; {new Date().getFullYear()} John Doe, All Rights Reserved
           </p>
