@@ -62,7 +62,7 @@ const HeroSection = () => {
 
               <div className="flex gap-[20px] md:gap-[32px] items-center">
                 <button
-                  className={`${openSans.className} font-openSans capitalize text-white relative bg-themeBlue text-[16px] font-[600] leading-[150%] rounded-[12px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlack before:rounded-[12px] before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full animate-bg-slide`}
+                  className={`${openSans.className} font-openSans border-[6px] border-[#EFF2FF] capitalize text-white relative bg-themeBlue text-[16px] font-[600] leading-[150%] rounded-[18px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlack before:rounded-[12px] before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full animate-bg-slide`}
                 >
                   <span className="relative z-10">Hire me now</span>
                 </button>
@@ -80,14 +80,14 @@ const HeroSection = () => {
                           : "translate-y-0 opacity-100"
                       } transition-all duration-300 capitalize ${
                         hovered ? "text-themeBlue" : "text-themeGray"
-                      }`}
+                      } underline`}
                     >
                       Explore Projects
                     </span>
                     <span
                       className={`${
                         hovered
-                          ? "translate-y-0 opacity-100 text-themeBlue"
+                          ? "translate-y-0 opacity-100 text-themeBlue underline"
                           : "translate-y-[20px] opacity-0 text-themeGray"
                       } transition-all duration-300 capitalize`}
                     >

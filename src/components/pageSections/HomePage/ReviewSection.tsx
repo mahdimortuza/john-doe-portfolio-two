@@ -11,7 +11,7 @@ import { ChevronLeft, ChevronRight, Dot } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
 const ReviewSection = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
@@ -42,22 +42,25 @@ const ReviewSection = () => {
   return (
     <Container className=" ">
       <ContainerInner className="">
-        <div className="flex flex-col lg:flex-row gap-[20px] overflow-hidden rounded-[32px]">
+        <div className="flex flex-col lg:flex-row gap-[8px] lg:gap-[20px] overflow-hidden rounded-[16px] xl:rounded-[32px]">
           {/* left side 1st content  */}
-          <div className="bg-white lg:w-[700px] w-full rounded-[32px]">
-            <div className="py-[40px] lg:py-[80px] px-[24px] flex flex-col justify-center">
-              <h1
-                className={`${openSans.className} font-openSans text-[#09090A] text-[32px] lg:text-[44px] font-[600] leading-[136%] capitalize`}
-              >
-                Client Experiences and Feedback
-              </h1>
-              <p
-                className={`mt-[20px] ${inter.className} font-inter text-[#40424D] text-[14px] lg:text-[16px] font-[400] leading-[175%]`}
-              >
-                Discover what my clients have to say about my work, from
-                successful collaborations to impactful.
-              </p>
-              <div className="mt-[32px] lg:mt-[60px] flex flex-col items-center justify-center mx-auto">
+          <div className="bg-white lg:w-[700px] w-full rounded-[16px] xl:rounded-[32px]">
+            <div className="py-[40px] xl:py-[80px] px-[24px] flex flex-col justify-center">
+              {/* text contents here  */}
+              <div className="w-full">
+                <h1
+                  className={`${openSans.className} font-openSans text-[#09090A] text-[32px] lg:text-[44px] font-[600] leading-[136%] capitalize`}
+                >
+                  Client Experiences and Feedback
+                </h1>
+                <p
+                  className={`mt-[20px] ${inter.className} font-inter text-[#40424D] text-[14px] lg:text-[16px] font-[400] leading-[175%]`}
+                >
+                  Discover what my clients have to say about my work, from
+                  successful collaborations to impactful.
+                </p>
+              </div>
+              <div className=" hidden mt-[32px] lg:mt-[60px] lg:flex flex-col items-center justify-center mx-auto">
                 {/* button for controlling the scroll */}
                 <div className="flex space-x-4">
                   <button
@@ -75,22 +78,22 @@ const ReviewSection = () => {
                 </div>
 
                 {/* scroll bullet dots */}
-                <div className="embla__dots flex justify-center space-x-2 mt-[35px]">
+                <div className="embla__dots flex justify-center space-x-[16px] mt-[35px]">
                   {scrollSnaps.map((_, index) => (
                     <button
                       key={index}
                       className={`${
                         index === selectedIndex
-                          ? "text-themeBlue"
-                          : "text-[#DAE1FF]"
+                          ? "text-themeGray border-[3px] border-themeGray p-[5px] rounded-full"
+                          : "text-themeGray"
                       }`}
                       onClick={() => scrollTo(index)}
                     >
                       <div
                         className={`${
                           index === selectedIndex
-                            ? "w-[24px] h-[8px] bg-themeBlue"
-                            : "w-[8px] h-[8px] bg-[#DAE1FF]"
+                            ? "w-[8px] h-[8px] bg-themeGray"
+                            : "w-[8px] h-[8px] bg-themeGray"
                         } rounded-full transition-all duration-300 ease-in-out`}
                       >
                         <Dot className="w-full h-full" />
@@ -103,7 +106,7 @@ const ReviewSection = () => {
           </div>
           {/* slide second content */}
           <div
-            className="embla lg:w-full w-full rounded-l-[32px]"
+            className="embla lg:w-full w-full rounded-l-[16px] xl:rounded-l-[32px]"
             ref={emblaRef}
           >
             <div className="embla__container">
@@ -121,6 +124,31 @@ const ReviewSection = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* scroll bullet dots for mobile */}
+          <div className="embla__dots flex justify-center space-x-[16px] mt-[0px] lg:hidden bg-white py-[48px] rounded-t-[16px] xl:rounded-t-[32px]">
+            {scrollSnaps.map((_, index) => (
+              <button
+                key={index}
+                className={`${
+                  index === selectedIndex
+                    ? "text-themeGray border-[3px] border-themeGray p-[5px] rounded-full"
+                    : "text-themeGray"
+                }`}
+                onClick={() => scrollTo(index)}
+              >
+                <div
+                  className={`${
+                    index === selectedIndex
+                      ? "w-[8px] h-[8px] bg-themeGray"
+                      : "w-[8px] h-[8px] bg-themeGray"
+                  } rounded-full transition-all duration-300 ease-in-out`}
+                >
+                  <Dot className="w-full h-full" />
+                </div>
+              </button>
+            ))}
           </div>
         </div>
       </ContainerInner>

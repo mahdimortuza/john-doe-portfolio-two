@@ -16,11 +16,30 @@ const AboutSection = () => {
           {/* left side first div  */}
           <div className="w-full xl:w-1/2">
             <div className="relative ">
+              {/* left side object image  */}
+
+              <Image
+                src={assets.aboutImage.objectLeft}
+                alt="object image"
+                className="absolute top-[30px] xl:top-[100px] left-[35px] xl:left-[140px] object-cover rounded-full h-[74px] w-[30px] xl:h-[160px] xl:w-[64px]"
+              />
+
+              {/* right side object image  */}
+
+              <Image
+                src={assets.aboutImage.objectRight}
+                alt="object image"
+                className="absolute top-[90px] xl:top-[240px] right-[40px] xl:right-[140px] object-cover rounded-full h-[74px] w-[30px] xl:h-[160px] xl:w-[64px]"
+              />
+
+              {/* main profile image */}
               <Image
                 src={assets.aboutImage.profileImage}
                 alt="profile image"
                 className="absolute bottom-0  h-[90%] md:h-[80%] lg:h-[90%] w-auto left-1/2 transform -translate-x-1/2"
               />
+
+              {/* cover image  */}
               <Image
                 src={assets.aboutImage.background}
                 // fill={true}
@@ -69,7 +88,7 @@ const AboutSection = () => {
 
               {/* resume button  */}
               <button
-                className={`${openSans.className} font-openSans mt-[32px] xl:mt-[55px] text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[26px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
+                className={`${openSans.className} font-openSans border-[6px] border-[#EFF2FF] mt-[32px] xl:mt-[55px] text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[18px] px-[26px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
               >
                 <span className="relative z-10">Download CV</span>
               </button>

@@ -54,7 +54,7 @@ const CallToActionSection = () => {
               </div>
               {/* hire me cta button  */}
               <button
-                className={`${openSans.className} font-openSans mt-[28px] text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[30px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:rounded-[12px] before:transition-all before:duration-500 hover:text-black  hover:before:left-0 hover:before:w-full animate-bg-slide`}
+                className={`${openSans.className} font-openSans border-[6px] border-[#748fff] mt-[28px] text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[18px] px-[30px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:rounded-[12px] before:transition-all before:duration-500 hover:text-black  hover:before:left-0 hover:before:w-full animate-bg-slide`}
               >
                 <span className="relative z-10 capitalize">hire me now</span>
               </button>

@@ -9,7 +9,7 @@ const ContainerInner = ({ children, className }: TContainerProps) => {
   return (
     <div
       // max-w-[1530px]
-      className={`h-full rounded-[32px] mt-[8px] lg:mt-[20px] ${className}`}
+      className={`h-full rounded-[16px] xl:rounded-[32px] mt-[8px] lg:mt-[20px] ${className}`}
     >
       {children}
     </div>

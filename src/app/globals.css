@@ -111,7 +111,21 @@ body {
   display: flex;
   gap: 20px;
 }
-.embla__slide {
-  flex: 0 0 75%;
+/* .embla__slide {
+  flex: 0 0 100%;
   min-width: 0;
+} */
+
+@media only screen and (max-width: 1400px) {
+  .embla__slide {
+    flex: 0 0 98%;
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
 }

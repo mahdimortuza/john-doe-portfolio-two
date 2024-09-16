@@ -45,10 +45,10 @@ const Navbar = () => {
   return (
     <nav
       // max-w-[1530px] px-[10px] mx-auto
-      className={`fixed bg-white top-0 right-[10px] left-[10px] lg:right-[8px] lg:left-[8px] py-[20px]  px-[10px] z-50 max-w-[1905px] mx-auto ${
+      className={`fixed bg-white top-0 right-[10px] left-[10px] lg:right-[8px] lg:left-[8px] py-[30px]  px-[10px] z-50 max-w-[1905px] mx-auto ${
         shadow
           ? "shadow-[0px_0px_3px_-0px_rgba(0,0,0,0.3)] rounded-t-[0px] mt-[0px]"
-          : "shadow-none rounded-t-[32px] mt-[20px]"
+          : "shadow-none rounded-t-[16px] xl:rounded-t-[32px] mt-[20px]"
       }`}
     >
       <div className="max-w-[1525px] mx-auto px-[15px] md:px-[0px] flex justify-between items-center">
@@ -105,7 +105,7 @@ const Navbar = () => {
 
         <Link to="contact" smooth={true}>
           <button
-            className={`${openSans.className} hidden md:block text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[12px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
+            className={`${openSans.className} font-openSans border-[6px] border-[#EFF2FF] hidden md:block text-white relative bg-themeBlack  text-[16px] font-[600] leading-[150%] rounded-[18px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlue before:rounded-[12px] before:transition-all before:duration-500 hover:text-white  hover:before:left-0 hover:before:w-full animate-bg-slide`}
           >
             <span className="relative z-10">Contact Me</span>
           </button>

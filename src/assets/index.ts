@@ -20,6 +20,8 @@ const assets = {
   aboutImage: {
     background: require("../assets/about-images/background/background.jpeg"),
     profileImage: require("../assets/about-images/profile-image.png"),
+    objectLeft: require("../assets/about-images/objects/object1.png"),
+    objectRight: require("../assets/about-images/objects/object2.png"),
   },
   icons: {
     ui: require("../assets/icons/ui.svg"),

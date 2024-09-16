@@ -238,7 +238,7 @@ const ContactSection = () => {
                 type="submit"
                 // className={`${openSans.className} font-openSans `}
 
-                className={` mt-[12px] ${openSans.className} font-openSans capitalize  text-white relative bg-themeBlue text-[16px] font-[600] leading-[150%] rounded-[12px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlack before:rounded-[12px] before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full animate-bg-slide`}
+                className={` mt-[12px] ${openSans.className} font-openSans  border-[6px] border-[#EFF2FF] capitalize  text-white relative bg-themeBlue text-[16px] font-[600] leading-[150%] rounded-[18px] px-[22px] py-[10px] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-themeBlack before:rounded-[12px] before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full animate-bg-slide`}
               >
                 <span className="relative z-10">Send Message</span>
               </button>
